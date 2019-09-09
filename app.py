@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.secret_key = "lucy"
 Bootstrap(app)
 
-@app.route('/', methods= ["GET", "POST"])
+@app.route('/')
 def search():
     return render_template('index.html')
 
